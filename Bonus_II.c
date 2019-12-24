@@ -1,16 +1,20 @@
 /**********************************************************************************************
-a program to solve 'Battle Over Cities - Hard Version'
-by reading all the roads into the rank and use Insertion-Sort to make it unincreasing
-then suppose each city being taken and use Kruskal algorithm to generate a Minimum Spinning Tree
-to decide the max-cost of each city
-problem: 
-1) when there's no spinning tree be made, put INFINITY to the max-cost of this city
-2) The BIGGEST problem: there has been a mistake when writing the Kruskal algorithm
-when updating the visited[] of two disjoint connected components, there will cause a mistake that could not finish the update
-which lead to serious problem passing the 3, 4 checkpoint. detailed problem please refer to the function comments below.
-Anyway, to finally discover the problem, I write a simulation generator and generate cases from 5 cities to 20 cities, and use a
-relatively "correct" Internet Version as comparison. And after 1-2 hours of search, a 10 cities version has found the problem,
-after carefully examming what has lead to such difference, the mistake was found.
+ * Work in DS Bonus Test III
+ * Arthor: Lunium Luk (GitHub): https://github.com/LuniumLuk/ZJU-DS-Projs-and-HWs.git
+ * Final Edit Date: 2019/12/24
+ * 
+ * a program to solve 'Battle Over Cities - Hard Version'
+ * by reading all the roads into the rank and use Insertion-Sort to make it unincreasing
+ * then suppose each city being taken and use Kruskal algorithm to generate a Minimum Spinning Tree
+ * to decide the max-cost of each city
+ * problem: 
+ * 1) when there's no spinning tree be made, put INFINITY to the max-cost of this city
+ * 2) The BIGGEST problem: there has been a mistake when writing the Kruskal algorithm
+ * when updating the visited[] of two disjoint connected components, there will cause a mistake that could not finish the update
+ * which lead to serious problem passing the 3, 4 checkpoint. detailed problem please refer to the function comments below.
+ * Anyway, to finally discover the problem, I write a simulation generator and generate cases from 5 cities to 20 cities, and use a
+ * relatively "correct" Internet Version as comparison. And after 1-2 hours of search, a 10 cities version has found the problem,
+ * after carefully examming what has lead to such difference, the mistake was found.
 **********************************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
