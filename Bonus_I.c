@@ -1,3 +1,26 @@
+/********************************************************************************
+ * Work in DS Bonus II
+ * Arthor: Lunium Luk (GitHub): https://github.com/LuniumLuk/ZJU-DS-Projs-and-HWs.git
+ * Final Edit Date: 2019/12/24
+ * 
+ * Bonus-1 Path of Equal Weight
+ * https://pintia.cn/problem-sets/1181437379322073088/problems/1181437580984209408
+ * Given a non-empty tree with root R, and with weight W​i​​ assigned to each tree node T​i​​. 
+ * The weight of a path from R to L is defined to be the sum of the weights of all the nodes 
+ * along the path from R to any leaf node L.
+ * 
+ * Now given any weighted tree, you are supposed to find all the paths with their weights equal 
+ * to a given number. For example, let's consider the tree showed in the following figure: for 
+ * each node, the upper number is the node ID which is a two-digit number, and the lower number 
+ * is the weight of that node. Suppose that the given number is 24, then there exists 4 different 
+ * paths which have the same given weight: {10 5 2 7}, {10 4 10}, {10 3 3 6 2} and {10 3 3 6 2}, 
+ * which correspond to the red edges in the figure.
+ * 
+ * anyway, it is required to read in a tree whose node possess more than two children and with weight
+ * it is supposed to return path from root to leaf of certain weight
+ * using function to do a Traversal from root to the leaf and get the weight of the route
+********************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 
