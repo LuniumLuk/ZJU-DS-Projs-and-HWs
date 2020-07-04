@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define SELF 20
+
 int temp[100][4];
 
 int main() {
